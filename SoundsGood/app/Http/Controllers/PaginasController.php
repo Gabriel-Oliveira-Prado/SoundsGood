@@ -13,4 +13,24 @@ class PaginasController extends Controller
     public function Login() {
         return view('Login');   
     }
+
+    public function Atividades() {
+        return view('Atividades');   
+    }
+
+    public function Respiracao() {
+        return view('Respiracao');   
+    }
+
+    public function Meditacao() {
+        return view('Meditacao');   
+    }
+
+    public function Alongamento() {
+        return view('Alongamento');   
+    }
+
+    public function SonsCalmantes() {
+        return view('SonsCalmantes');   
+    }
 }
