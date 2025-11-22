@@ -125,23 +125,6 @@
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="footer mt-5">
-        <div class="aurora-container">
-            <div class="aurora aurora-1"></div>
-            <div class="aurora aurora-2"></div>
-            <div class="aurora aurora-3"></div>
-        </div>
-        <div class="footer-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <p class="footer-copyright mb-0">&copy; 2025 SoundsGood. Todos os direitos reservados.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script>
