@@ -8,10 +8,14 @@ use Illuminate\Support\Facades\Hash;
 
 class AuthController extends Controller
 {
+    public function login(){
+        return view('Login');
+    }
+
     public function register(Request $request)
     {
         // Validação dos dados
-        $request->validate([
+        $request-> validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email|unique:users,email',
             'password' => 'required|string|confirmed|min:6',
@@ -25,9 +29,9 @@ class AuthController extends Controller
         ]);
 
         // Logar automaticamente
-        auth()->login($user);
+
 
         // Redirecionar para página inicial após cadastro
-        return redirect('/Atividades');
+        return redirect()-> route('/Atividades');
     }
 }

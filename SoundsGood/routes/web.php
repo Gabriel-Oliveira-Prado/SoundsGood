@@ -1,10 +1,14 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PaginasController;
 
+// Rotas para o formulario de registro
+Route::get('/login', [AuthController::class, 'login'])->name('usuario.login');
+Route::post('/login', [AuthController::class, 'register'])->name('usuario.register');
+
 route::get('/', [PaginasController::class, 'SoundsGood']);
-route::get('/', [PaginasController::class, 'Login']);
 route::get('/', [PaginasController::class, 'Atividades']);
 route::get('/', [PaginasController::class, 'Respiracao']);
 route::get('/', [PaginasController::class, 'Meditacao']);
@@ -18,6 +22,7 @@ Route::get('/', function () {
 Route::get('/Login', function () {
     return view('Login');
 });
+
 
 Route::get('/Atividades', function () {
     return view('Atividades');
