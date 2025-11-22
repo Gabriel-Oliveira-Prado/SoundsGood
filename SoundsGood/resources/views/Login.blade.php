@@ -95,7 +95,7 @@
                             <p>Crie sua conta e descubra a tranquilidade</p>
                         </div>
                         
-                        <form class="auth-form" id="registerFormElement">
+                        <form class="auth-form" id="registerFormElement" method="POST" action="{{ route('register') }}">
                             <div class="form-group">
                                 <label for="registerName" class="form-label">
                                     <i class="fas fa-user"></i> Nome Completo
