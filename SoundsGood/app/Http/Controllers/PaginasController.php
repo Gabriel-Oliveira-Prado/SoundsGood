@@ -10,7 +10,6 @@ class PaginasController extends Controller
         return view('SoundsGood');
     }
 
-
     public function Atividades() {
         return view('Atividades');   
     }

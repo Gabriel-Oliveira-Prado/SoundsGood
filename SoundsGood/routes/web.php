@@ -5,8 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PaginasController;
 
 // Rotas para o formulario de registro
-Route::get('/login', [AuthController::class, 'login'])->name('usuario.login');
-Route::post('/login', [AuthController::class, 'register'])->name('usuario.register');
+Route::post('/auth', [AuthController::class, 'auth'])->name('login.auth');
 
 route::get('/', [PaginasController::class, 'SoundsGood']);
 route::get('/', [PaginasController::class, 'Atividades']);
